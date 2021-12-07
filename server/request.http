@@ -1,0 +1,76 @@
+# request 1
+GET  http://localhost:5000
+
+################################
+GET http://localhost:5000/api/auth
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3NGYxMDY0ZjMxZWYyMWIyZDVjYTkiLCJpYXQiOjE2MzgzNTQ3MDR9.b6z1DUPJ4fuHj-Hw5XsTfhZ-sOiSWy_jOqMLpvzqwMQ
+
+################################
+#post register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"banhcanh",
+    "password":"1234"
+}
+
+################################
+#post login
+POST http://localhost:5000/api/auth/login
+content-type: application/json
+
+{
+    "username":"banhcanh",
+    "password":"1234"
+}
+
+################################
+#post post-test
+POST http://localhost:5000/api/post/test
+################################
+#[POST] post/create
+POST http://localhost:5000/api/post/create
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWFjYjdlNmVlNTk2MDFmNjVkYjNlNDgiLCJpYXQiOjE2Mzg4NTMwNjB9.LcH5T0eAdzbTAGWUDcco90bMyE0YTHEIjHKJdr96MAg
+
+{
+    "title":"Nodejs++",
+    "description":"Học Nodejs++",
+    "url":"Nodejs.org",
+    "status":"TO LEARN"
+}
+
+################################
+#[get] get posts
+GET http://localhost:5000/api/post/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3M2ZiNmI3ZGRhNTZjYjQ2ZTk4MjEiLCJpYXQiOjE2MzgzNTU3ODV9.Zycwv1ZvAVD6_7gL9gwrNUGDEGOrI26yRWCRwPoWd_g 
+
+################################
+#[put] put post :id edit
+PUT http://localhost:5000/api/post/61a74934403b722fe984c33a/edit
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3M2ZiNmI3ZGRhNTZjYjQ2ZTk4MjEiLCJpYXQiOjE2MzgzNTU3ODV9.Zycwv1ZvAVD6_7gL9gwrNUGDEGOrI26yRWCRwPoWd_g 
+content-type: application/json
+
+{
+    "title":"ReactJs",
+    "description":"Học ReactJs",
+    "url":"https://reactjs.org",
+    "status":"LEARNING"
+}
+
+################################
+# [delete] api/post/:id/delete
+DELETE  http://localhost:5000/api/post/61a770999d0c5dff700c058e/delete
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3M2ZiNmI3ZGRhNTZjYjQ2ZTk4MjEiLCJpYXQiOjE2MzgzNTU3ODV9.Zycwv1ZvAVD6_7gL9gwrNUGDEGOrI26yRWCRwPoWd_g 
+
+
+################################################################
+Get http://192.168.1.7:5000/api/auth/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3NGYxMDY0ZjMxZWYyMWIyZDVjYTkiLCJpYXQiOjE2MzgzNTQ3MDR9.b6z1DUPJ4fuHj-Hw5XsTfhZ-sOiSWy_jOqMLpvzqwMQ
+content-type: application/json
+
+{
+    "username":"banhcanh",
+    "password":"1234"
+}
