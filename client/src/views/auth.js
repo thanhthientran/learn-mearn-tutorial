@@ -9,14 +9,7 @@ const Auth = ({ authRoute }) => {
 
     const { authState: { authLoading, isAuthenticated } } = useContext(AuthContext)
     let body
-    if (authLoading) {
-        body = (
-            <div className="d-flex justify-content-center mt-2">
-                <Spinner animation='border' variant='info' />
-            </div>
-        )
-    }
-    else if (isAuthenticated) return <Navigate replace to='/dashboard' />
+    if (isAuthenticated) return <Navigate replace to='/dashboard' />
     else {
         body = (
             <>
