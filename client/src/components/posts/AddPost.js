@@ -41,7 +41,7 @@ const AddPostModal = () => {
         <>
             <Modal show={showAddPostModal} onHide={closeDialog} >
                 <Modal.Header closeButton>
-                    <Modal.Title className="text-center">Làm điều mình thích ch!ch người mình yêu</Modal.Title>
+                    <Modal.Title className="text-center">Add Post</Modal.Title>
                 </Modal.Header>
                 <Form onSubmit={onSubmit}>
                     <Modal.Body>
