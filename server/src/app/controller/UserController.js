@@ -83,8 +83,8 @@ class UserController {
         }
          
     }
-    testDeploylan3(req,res){
-        res.send('testDeploylan3 successfully (>.<)')
+    testDeploylan2(req,res){
+        res.send('testDeploy successfully (>.<)')
     }
 }
 
