@@ -83,6 +83,9 @@ class UserController {
         }
          
     }
+    testDeploylan2(req,res){
+        res.send('testDeploylan2 successfully (>.<)')
+    }
 }
 
 module.exports = new UserController
